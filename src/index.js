@@ -6,6 +6,7 @@ const { init } = require('./utils/aticidade');
 client.on('ready', () => {
     console.log('Ready')
     init(client);
+    client.user.setPresence({ activity: { name: '😎', type: 0 } })
 });
 
 
